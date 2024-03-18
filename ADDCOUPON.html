@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Add Coupon</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="addProductCss.css">
+
+</head>
+
+<body>
+
+
+   <div class="container">
+      <a href="Admin.html" type="submit" class="btn1"> Back
+          </a>
+
+      <div class="admin-product-form-container">
+
+        <div class="form ">
+	<form action="ADDCOUPON.html" method="get">
+         <h3>add a new Coupon</h3>
+         <input type="text"   placeholder="Enter coupon name" id="coupon_name" class="box" required>
+         <input type="text"  placeholder="Enter coupon code" id="coupon_code" class="box" required>
+         <input type="number"  placeholder="Discount %" id="discout_price" class="box" required>
+         <input type="text"  placeholder="ExpiringDate" id="expiry_date" class="box" required>
+	  <button type="submit" onclick="addcoupon()">Add coupon</button>
+      </div>
+
+      </div>
+   </div>
+</body>
+<script>
+
+function myfunction1()
+{
+   
+    window.location.href = "ADDCOUPON.html";
+}
+</script>
+
+
+</html>
